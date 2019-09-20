@@ -7,20 +7,20 @@ As shown in the figure above, the table has five parts, each of which is represe
  
 We organize the model into a partnet tree, as shown in the figure above. Each leaf node represents a box, or part. So why does the example model mentioned above have five boxes and this tree only has three leaf nodes? We find that because box 1 and box 4 are symmetrical and box 2 and box 3 are symmetrical , only one representative box needs to be stored in a symmetrical relationship, and then only one symmetrical parameter needs to be stored to obtain the other boxes of the symmetrical relationship according to the symmetrical parameters.
 
-我们把一颗partnet tree的节点分为三类，0表示叶子节点，1表示邻接节点（它的左孩子与右孩子为邻接关系），2表示对称节点（它只有左孩子，左孩子是一个对称关系中的代表box。然后再存储对称参数即可）。
+We classify nodes of a partnet tree into three categories: 0 for leaf node, 1 for adjacent node (its left child is adjacent to the right child), and 2 for symmetric node (it has only left child, and the left child is a representative box in the symmetric relationship. Then store the symmetric parameters.)
 
-我们的每一类数据模型一共有7个文件夹。  ops文件夹下每一个mat文件存储一颗partnet tree的节点对应类型，如下图所示为简单桌子的partnet tree的节点对应类型。
+There are seven folders in each of our data models. Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of a simple table.
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
 
-part_fix文件夹下的mat文件存储一个模型的叶子节点对应的box索引。如下图所示，序号为3、1、2的叶子节点分别对应box5、box4、box3。  
+The mat file under the part_fix folder stores the box index corresponding to the leaf node of a model. As shown in the following figure, leaf nodes with serial numbers 3, 1 and 2 correspond to box 5, box 4 and box 3, respectively.  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture5.png)
 
-boxes文件夹下的mat文件存储一个模型的每个叶子节点对应的box。
+The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
-labels文件夹下的mat文件对应每个叶子节点的类型标识。如下图所示，叶子节点3表示桌面（标为0），叶子节点1和2表示腿（标为1）。  
+The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 3 represents the desktop (marked by number 0), and leaf nodes 1 and 2 represent legs (marked by number 1).  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
 
-syms文件夹下的mat文件对应存储每个对称节点的对称参数。简单桌子的例子中有两组对称关系，因此存储了两个对称参数。在partnet tree中分别对应节点4和节点5。
+The mat file under Syms folder stores symmetrical parameters of each symmetrical node. In the example of a simple table, there are two sets of symmetrical relationships, so two symmetrical parameters are stored. In partnet tree, corresponding nodes 4 and 5 respectively.
 
-models文件夹下存储.obj形式的模型。obbs文件夹下存储每个模型对应的obb文件。
+The models folder stores models in .obj form. The obbs folder stores the corresponding obb files for each model.
 
