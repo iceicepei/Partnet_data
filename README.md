@@ -9,7 +9,7 @@ We organize the model into a partnet tree, as shown in the figure above. Each le
 
 We classify nodes of a partnet tree into three categories: 0 for leaf node, 1 for adjacent node (its left child is adjacent to the right child), and 2 for symmetric node (it has only left child, and the left child is a representative box in the symmetric relationship. Then store the symmetric parameters.)
 
-There are seven folders in each of our data models. Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of a simple table.
+There are seven folders in each of our data models. Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of a simple table.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
 
 The mat file under the part_fix folder stores the box index corresponding to the leaf node of a model. As shown in the following figure, leaf nodes with serial numbers 3, 1 and 2 correspond to box 5, box 4 and box 3, respectively.  
