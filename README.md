@@ -4,4 +4,5 @@
 如上图所示，这个桌子有五个part，每个part用一个box来表示，标号从box1到box5。五个part被标识为两类：桌面和腿；用数字0标识桌面，用数字1标识腿。其中box1和box4具有对称关系，box2和box3具有对称关系。
 
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture2.png)
+ 
 我们将该模型组织成一颗partnet tree，如上图所示。
