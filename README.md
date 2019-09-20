@@ -11,3 +11,10 @@
 
 我们的每一类数据模型一共有7个文件夹。ops文件夹下每一个mat文件存储一颗partnet tree的节点对应类型，如下图所示为简单桌子的partnet tree的节点对应类型。
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)
+
+part_fix文件夹下的mat文件存储一个模型的叶子节点对应的box索引。如下图所示，序号为3、1、2的叶子节点分别对应box5、box4、box3。
+![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture4.png)
+
+boxes文件夹下的mat文件存储一个模型的每个叶子节点对应的box。
+
+
