@@ -20,3 +20,5 @@ boxes文件夹下的mat文件存储一个模型的每个叶子节点对应的box
 labels文件夹下的mat文件对应每个叶子节点的类型标识。如下图所示，叶子节点3表示桌面（标为0），叶子节点1和2表示腿（标为1）。  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
 
+syms文件夹下的mat文件对应存储每个对称节点的对称参数。简单桌子的例子中有两组对称关系，因此存储了两个对称参数。在partnet tree中分别对应节点4和节点5。
+
