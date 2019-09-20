@@ -17,4 +17,6 @@ part_fix文件夹下的mat文件存储一个模型的叶子节点对应的box索
 
 boxes文件夹下的mat文件存储一个模型的每个叶子节点对应的box。
 
+labels文件夹下的mat文件对应每个叶子节点的类型标识。如下图所示，叶子节点3表示桌面（标为0），叶子节点1和2表示腿（标为1）。  
+![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
 
