@@ -49,3 +49,6 @@ syms文件夹下的mat文件对应存储每个对称节点的对称参数。简�
 
 ##### F. models文件夹和obbs文件夹
 models文件夹下存储.obj形式的模型。obbs文件夹下存储每个模型对应的obb文件。
+
+### 数据集获取
+你可以在[这里](https://www.dropbox.com/sh/o04yue60joxwkml/AACS0HmBybSgEruM3C5bmAvJa?dl=0)下载数据集。
