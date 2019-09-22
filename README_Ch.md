@@ -25,6 +25,8 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 
 我们把一颗partnet tree的节点分为三类，0表示叶子节点，1表示邻接节点（它的左孩子与右孩子为邻接关系），2表示对称节点（它只有左孩子，左孩子是一个对称关系中的代表box。然后再存储对称参数即可）。
 
+#### 3. Folder instructions
+
 我们的每一类数据模型一共有7个文件夹。  ops文件夹下每一个mat文件存储一颗partnet tree的节点对应类型，如下图所示为简单桌子的partnet tree的节点对应类型。（0表示叶子节点，1表示邻接节点，2表示对称节点）。
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
 
