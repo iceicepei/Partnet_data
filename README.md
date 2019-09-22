@@ -17,6 +17,8 @@ We use a simple table as an example to illustrate how our data is organized.
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture1.png)  
 As shown in the figure above, this is an obj model displayed in Deep Exploration, which represents a simple table.The table has five parts, each of which is represented by a box with labels ranging from box 1 to box 5. Five parts are identified as two categories: desktop and legs; desktop is marked with number 0 and legs are marked with number 1. Among them, box 1 and box 4 are symmetrical, while box 2 and box 3 are symmetrical.
 
+#### 2. Structure of a parnet tree
+
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture2.png)
  
 We organize the model into a partnet tree, as shown in the figure above. Each leaf node represents a box, or part. So why does the example model mentioned above have five boxes and this tree only has three leaf nodes? We find that because box 1 and box 4 are symmetrical and box 2 and box 3 are symmetrical , only one representative box needs to be stored in a symmetrical relationship, and then only one symmetrical parameter needs to be stored to obtain the other boxes of the symmetrical relationship according to the symmetrical parameters.
