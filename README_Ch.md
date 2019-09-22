@@ -29,23 +29,23 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 
 我们的每一类数据模型一共有7个文件夹。  
 
-##### ops文件夹
+##### A. ops文件夹
 ops文件夹下每一个mat文件存储一颗partnet tree的节点对应类型，如下图所示为简单桌子的partnet tree的节点对应类型。（0表示叶子节点，1表示邻接节点，2表示对称节点）。
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
 
-##### part_fix文件夹
+##### B. part_fix文件夹
 part_fix文件夹下的mat文件存储一个模型的叶子节点对应的box索引。如下图所示，序号为3、1、2的叶子节点分别对应box5、box4、box3。  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture5.png)
 
-##### boxes文件夹
+##### C. boxes文件夹
 boxes文件夹下的mat文件存储一个模型的每个叶子节点对应的box。
 
-##### labels文件夹
+##### D. labels文件夹
 labels文件夹下的mat文件对应每个叶子节点的类型标识。如下图所示，叶子节点3表示桌面（标为0），叶子节点1和2表示腿（标为1）。  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
 
-##### syms文件夹
+##### E. syms文件夹
 syms文件夹下的mat文件对应存储每个对称节点的对称参数。简单桌子的例子中有两组对称关系，因此存储了两个对称参数。在partnet tree中分别对应节点4和节点5。
 
-##### models文件夹和obbs文件夹
+##### F. models文件夹和obbs文件夹
 models文件夹下存储.obj形式的模型。obbs文件夹下存储每个模型对应的obb文件。
