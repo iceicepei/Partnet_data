@@ -17,7 +17,7 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture1.png)  
 如上图所示，这是一个显示在Deep Exploration中的obj模型，它表示一个简单桌子。这个桌子有五个part，每个part用一个box来表示，标号从box1到box5。五个part被标识为两类：桌面和腿；用数字0标识桌面，用数字1标识腿。其中box1和box4具有对称关系，box2和box3具有对称关系。
 
-#### 2. Structure of a parnet tree
+#### 2. Structure of a partnet tree
 
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture2.png)
  
