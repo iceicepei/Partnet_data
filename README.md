@@ -17,7 +17,7 @@ We use a simple table as an example to illustrate how our data is organized.
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture1.png)  
 As shown in the figure above, this is an obj model displayed in Deep Exploration, which represents a simple table.The table has five parts, each of which is represented by a box with labels ranging from box 1 to box 5. Five parts are identified as two categories: desktop and legs; desktop is marked with number 0 and legs are marked with number 1. Among them, box 1 and box 4 are symmetrical, while box 2 and box 3 are symmetrical.
 
-#### 2. Structure of a parnet tree
+#### 2. Structure of a partnet tree
 
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture2.png)
  
