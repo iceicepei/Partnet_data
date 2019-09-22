@@ -7,13 +7,14 @@ We present PartNet: a recursive part decomposition network for fine-grained and 
 
 ### Dataset information
 
-The dataset contains 22699 3D shapes covering 24 shape categories: 
-|  category_name  |  lamp   | table | cutting_instrument    |  bag    | bed   | bottle    | bowl    | clock    | display    | dishwasher    | door    | dishwasher   |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| number of shapes | 999 | 630 | 583 | 630 | 100 | 155 |
-| number of parts | 9697 | 5234 | 3207 | 4747 | 1415 | 1238 |
-| maximum parts per shape | 25 | 14 | 17 | 27 | 21 | 9 |
-| minimum parts per shape | 3 | 4 | 2 | 2 | 6 | 6 |
+The dataset contains 22699 3D shapes covering 24 shape categories:
+
+|  category_name  |  lamp   | table | cutting_instrument   |  bag   | bed  | bottle   | bowl   | clock   | display   | dishwasher   | door   | dishwasher   |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| number of shapes | 999 | 630 | 583 | 630 | 100 | 155 | 999 | 630 | 583 | 630 | 100 | 155 |
+| number of parts | 9697 | 5234 | 3207 | 4747 | 1415 | 1238 | 9697 | 5234 | 3207 | 4747 | 1415 | 1238 |
+| maximum parts per shape | 25 | 14 | 17 | 27 | 21 | 9 | 25 | 14 | 17 | 27 | 21 | 9 |
+| minimum parts per shape | 3 | 4 | 2 | 2 | 6 | 6 | 3 | 4 | 2 | 2 | 6 | 6 |
 lamp (2603),table (5701),cutting_instrument (486),bag (158), bed (115),bottle (511),bowl (100),clock (426),display (329),dishwasher (198),door (198),earphone (269),faucet (826),hat (251),storage (2546),keyboard (109),laptop (92),microwave (81),mug (232),refrigerator (209),scissors (112),trashcan (296),vase (411) and chair (6440).
 
 ### Demo
