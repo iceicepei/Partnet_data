@@ -27,17 +27,25 @@ We classify nodes of a partnet tree into three categories: 0 for leaf node, 1 fo
 
 #### 3. Folder instructions
 
-There are seven folders in each of our data models. Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of a simple table.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
+There are seven folders in each of our data models. 
+
+##### A. the ops folder
+Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of a simple table.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
 
+##### B. the part_fix folder
 The mat file under the part_fix folder stores the box index corresponding to the leaf node of a model. As shown in the following figure, leaf nodes with serial numbers 3, 1 and 2 correspond to box 5, box 4 and box 3, respectively.  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture5.png)
 
+##### C. the boxes folder
 The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
+##### D. the labels folder
 The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 3 represents the desktop (marked by number 0), and leaf nodes 1 and 2 represent legs (marked by number 1).  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
 
-The mat file under Syms folder stores symmetrical parameters of each symmetrical node. In the example of a simple table, there are two sets of symmetrical relationships, so two symmetrical parameters are stored. In partnet tree, corresponding nodes 4 and 5 respectively.
+##### E. the syms folder
+The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In the example of a simple table, there are two sets of symmetrical relationships, so two symmetrical parameters are stored. In partnet tree, corresponding nodes 4 and 5 respectively.
 
+##### F. the models folder & the obbs folder
 The models folder stores models in .obj form. The obbs folder stores the corresponding obb files for each model.
