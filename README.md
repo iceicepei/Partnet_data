@@ -3,7 +3,7 @@ Dataset for PartNet: A Recursive Part Decomposition Network for Fine-grained and
 
 ### Introduction
 
-We present PartNet: a recursive part decomposition network for fine-grained and hierarchical shape segmentation. We add another dataset for it，which consists of 24 object categories.This dataset is derived from the dataset of the paper published by Stanford University called PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding). We organize their dataset into the form of our PartNet dataset for the purpose of expanding our dataset.This dataset could enable and serve as a catalyst for many tasks such as shape analysis, dynamic 3D scene modeling and simulation, affordance analysis, and others. 
+We present PartNet: a recursive part decomposition network for fine-grained and hierarchical shape segmentation. We expand another dataset for it，which consists of 24 object categories.This dataset is derived from the dataset of the paper published by Stanford University called PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding). We organize their dataset into the form of our PartNet dataset for the purpose of expanding our dataset.This dataset could enable and serve as a catalyst for many tasks such as shape analysis, dynamic 3D scene modeling and simulation, affordance analysis, and others. 
 
 ### About the Dataset
 
