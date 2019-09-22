@@ -49,3 +49,6 @@ The mat file under the syms folder stores symmetrical parameters of each symmetr
 
 ##### F. the models folder & the obbs folder
 The models folder stores models in .obj form. The obbs folder stores the corresponding obb files for each model.
+
+### Accessing to the dataset
+You could get the dataset [Here](https://www.dropbox.com/sh/um1li37bnbkpuck/AAAaCAuXWaY050E7W5b42XT1a?dl=0).
