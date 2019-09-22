@@ -5,6 +5,14 @@ Dataset for PartNet: A Recursive Part Decomposition Network for Fine-grained and
 
 We present PartNet: a recursive part decomposition network for fine-grained and hierarchical shape segmentation. We add another dataset for it，which consists of 24 object categories.This dataset is derived from the dataset of the paper published by Stanford University called PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding). We organize their dataset into the form of our PartNet dataset for the purpose of expanding our dataset.This dataset could enable and serve as a catalyst for many tasks such as shape analysis, dynamic 3D scene modeling and simulation, affordance analysis, and others. 
 
+### About the Dataset
+
+The dataset contains 22699 3D shapes covering 24 shape categories: lamp(2603),table(5701),cutting_instrument(486),bag(158), table(115),bottle(511),bowl(100),clock(426),display(329),dishwasher(198),door(198),earphone(269),faucet(826),hat(251),storage(2546),keyboard(109),laptop(92),microwave(81),mug(232),refrigerator(209),scissors(112),trashcan(296),vase(411) and chair(6440).
+
+
+
+### Demo
+
 我们用简单桌子作为一个例子来说明我们的数据是如何组织的。
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture1.png)  
 如上图所示，这个桌子有五个part，每个part用一个box来表示，标号从box1到box5。五个part被标识为两类：桌面和腿；用数字0标识桌面，用数字1标识腿。其中box1和box4具有对称关系，box2和box3具有对称关系。
