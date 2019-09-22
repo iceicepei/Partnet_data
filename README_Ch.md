@@ -11,7 +11,7 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 
 ### Demo
 
-我们用简单桌子作为一个例子来说明我们的数据是如何组织的。
+我们用简单桌子作为一个例子来说明我们的数据是如何组织的。具体分为三个部分进行说明。在第一部分，我们通过一个图来说明一个模型是如何通过obj文件和obb文件来表示的。在第二部分，我们也通过图示说明一颗partnet tree的结构。在第三部分，我们将说明每个文件夹的具体含义。
 
 #### 1. Representing the model with obj file
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture1.png)  
