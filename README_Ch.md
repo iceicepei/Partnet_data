@@ -14,7 +14,7 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 我们用椅子作为一个例子来说明我们的数据是如何组织的。具体分为两个部分进行说明。在第一部分，我们通过一个图来说明如何用一颗partnet tree来表示一个模型。在第二部分，我们将说明每个文件夹的具体含义。
 
 #### 1. Representing the model with a partnet tree
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture10.png)  
+![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture11.png)  
 如上图所示，左边是一个显示在Deep Exploration中的obj模型，它表示一把椅子。
 
 如上图右边所示，我们将该模型组织成一颗partnet tree。每个叶子节点代表一个单独part。然后我们把一颗partnet tree的节点分为三类，0表示叶子节点，1表示邻接节点（例如节点14，它的左孩子与右孩子为邻接关系），2表示对称节点（例如节点9，它只有左孩子，左孩子是一个对称关系中的代表部件。然后通过存储的对称参数可以求得对称关系中其他部件）。
@@ -25,8 +25,8 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 
 ##### A. ops文件夹
 ops文件夹下每一个mat文件存储一颗partnet tree的节点对应类型，如下图所示为简单桌子的partnet tree的节点对应类型。（0表示叶子节点，1表示邻接节点，2表示对称节点）。
-| 7 | 2 | 12 | 3 | 13 | 14 | 15 | 6 | 4 | 9 | 5 | 1 | 8 | 10 | 11 | 16 | 18 |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 7 | 2 | 12 | 3 | 13 | 14 | 15 | 6 | 4 | 9 | 5 | 1 | 8 | 10 | 11 | 16 | 17 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | 0 | 0 | 2 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
 
 ##### B. part_fix文件夹
