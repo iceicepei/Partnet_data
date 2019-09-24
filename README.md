@@ -15,16 +15,17 @@ The dataset contains 22699 3D shapes covering 24 shape categories:
 | number of parts | 12200 | 28958 | 1571 | 358 | 2420 | 1432 | 207 | 1151 | 1174 | 838 | 585 | 1193 | 4025 | 588 | 34564 | 5587 | 270 | 346 | 291 | 947 | 394 | 2565 | 1013 | 40879 |
 | maximum parts per shape | 122 | 47 | 5 | 4 | 59 | 5 | 3 | 8 | 5 | 8 | 9 | 8 | 18 | 3 | 100 | 63 | 3 | 8 | 4 | 11 | 5 | 43 | 8 | 30 |
 | minimum parts per shape | 2 | 2 | 2 | 2 | 4 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 13 | 2 | 3 | 2 | 2 | 2 | 2 | 2 | 2 |
+***Table 1. Specific information of our dataset.***
 
 ### Demonstration
 
 We use a chair as an example to illustrate how our data is organized. This chapter is specifically divided into two parts to elaborate the example. In the first part, we will use a figure to illustrate how to represent a model with a partnet tree. In the second part, we will explain the details of each folder.
 
 #### 1. Representing the model with a partnet tree
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture13.png) 
+![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture14.png) 
 ***Figure 1. The chair is represented as a top-down recursive hierarchy tree.***
 
-As shown in Figure 1 (a), this is an obj model displayed in Deep Exploration, which represents a chair.As shown in Figure 1 (b), we organize the model into a partnet tree. Each leaf node represents a part. Then we classify a partnet tree node into three categories: 0 for leaf nodes, 1 for adjacent nodes (e.g. node ***14***, whose left child is adjacent to the right child), and 2 for symmetric nodes (e.g. node ***9***, which is a rotational symmetric node and has only left child.The child is used to preserve a representative part in symmetric relationships.Then other parts in the symmetric relationship can be obtained by storing symmetric parameters).
+As shown in Figure 1 (a), this is an obj model displayed in Deep Exploration, which represents a chair.As shown in Figure 1 (b), we organize the model into a partnet tree. Each leaf node represents a part. Then we classify a partnet tree node into three categories: 0 for leaf nodes(e.g. ***node 7***), 1 for adjacent nodes (e.g. ***node 14***, whose left child is adjacent to the right child), and 2 for symmetric nodes (e.g. ***node 9***, which is a rotational symmetric node and has only left child.The child is used to preserve a representative part in symmetric relationships.Then other parts in the symmetric relationship can be obtained by storing symmetric parameters).
 
 #### 2. Folder instructions
 
