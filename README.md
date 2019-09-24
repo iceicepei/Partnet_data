@@ -44,8 +44,7 @@ The mat file under the part_fix folder stores the box index corresponding to the
 The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
 ##### D. the labels folder
-The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 7 represents the back of the chair (marked by number 0),leaf node 6 represents the chair cushion (marked by number 1),leaf nodes 1,4 and 5 represent legs (marked by number 2),and leaf node 2 and 3 represents the armrest of the chair (marked by number 3), .  
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
+The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 7 represents the back of the chair (marked by number 0),leaf node 6 represents the chair cushion (marked by number 1),leaf nodes 1,4 and 5 represent legs (marked by number 2),and leaf node 2 and 3 represents the armrest of the chair (marked by number 3).  
 
 |  节点序号  |  7   | 2 | 3    |  4    | 5   | 1    |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
