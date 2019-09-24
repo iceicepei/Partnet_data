@@ -33,9 +33,9 @@ As shown in Figure 1 (a), this is an obj model displayed in Deep Exploration, wh
 There are seven folders in each of our data models. 
 
 ##### A. the ops folder
-Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the table below for the corresponding type of the chair's node.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
+Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in Table 2 for the corresponding type of the chair's node.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
 
-|  node ordinal number  |  *node 7*   | *node 2* | *node 12*    |  *node 3*    | *node 13*   | *node 14*    | *node 15* | *node 6* | *node 4* | *node 9* | *node 5* | *node 1* | *node 8* | *node 10* | *node 11* | *node 16* | *node 17* |
+|  node ordinal number  | *node 7*  | *node 2* | *node 12*    |  *node 3*   | *node 13*  | *node 14*  | *node 15* | *node 6* | *node 4* | *node 9* | *node 5* | *node 1* | *node 8* | *node 10* | *node 11* | *node 16* | *node 17* |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | node type | 0 | 0 | 2 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
 
@@ -48,16 +48,16 @@ The mat file under the part_fix folder stores the box index corresponding to the
 The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
 ##### D. the labels folder
-The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following table,***node 7*** represents the back of the chair (labeled by number 0),***node 6*** represents the chair cushion (labeled by number 1),***node 1***,***node 4*** and ***node 5*** represent legs (labeled by number 2),and ***node 2*** and ***node 3*** represents the armrest of the chair (marked by number 3).  
+The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in Table 3,***node 7*** represents the back of the chair (labeled by number 0),***node 6*** represents the chair cushion (labeled by number 1),***node 1***,***node 4*** and ***node 5*** represent legs (labeled by number 2),and ***node 2*** and ***node 3*** represents the armrest of the chair (marked by number 3).  
 
 |  node ordinal number  |  *node 7*   | *node 2* | *node 3*    | *node 6*    |  *node 4*    | *node 5*   | *node 1*    |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | node label | 0 | 3 | 3 | 1 | 2 | 2 | 2 |
 
-***Table 2. Node label.***
+***Table 3. Node label.***
 
 ##### E. the syms folder
-The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In this example, there are four sets of symmetrical relationships, so four symmetrical parameters are stored. In partnet tree, corresponding nodes 8,9,12 and 13 respectively.
+The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In this example, there are four sets of symmetrical relationships, so four symmetrical parameters are stored. In partnet tree, corresponding ***node 8***,***node 9***,***node 12*** and ***node 13*** respectively.
 
 ##### F. the models folder & the obbs folder
 The models folder stores models in .obj form. The obbs folder stores the corresponding obb files for each model.
