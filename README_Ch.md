@@ -17,7 +17,7 @@ The dataset contains 22699 3D shapes covering 24 shape categories: lamp (2603),t
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture11.png)  
 如上图所示，左边是一个显示在Deep Exploration中的obj模型，它表示一把椅子。
 
-如上图右边所示，我们将该模型组织成一颗partnet tree。每个叶子节点代表一个单独part。然后我们把一颗partnet tree的节点分为三类，0表示叶子节点，1表示邻接节点（例如节点14，它的左孩子与右孩子为邻接关系），2表示对称节点（例如节点9，它只有左孩子，左孩子是一个对称关系中的代表部件。然后通过存储的对称参数可以求得对称关系中其他部件）。
+如上图右边所示，我们将该模型组织成一颗partnet tree。每个叶子节点代表一个单独part。然后我们把一颗partnet tree的节点分为三类，0表示叶子节点，1表示邻接节点（例如节点14，它的左孩子与右孩子为邻接关系），2表示对称节点（例如节点9，它只有左孩子，用于保存对称关系中的一个代表部件。然后通过存储的对称参数即可求得对称关系中其他部件）。
 
 #### 2. Folder instructions
 
