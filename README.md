@@ -69,7 +69,7 @@ The models folder stores models in .obj form. The obbs folder stores the corresp
 You could get the dataset [Here](https://www.dropbox.com/sh/o04yue60joxwkml/AACS0HmBybSgEruM3C5bmAvJa?dl=0).
 
 ## Citation
-If you use this code, please cite the following paper.
+If you use this dataset, please cite the following paper.
 ```
 @inproceedings{Yu_2019_CVPR,
     title = {PartNet: A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation},
