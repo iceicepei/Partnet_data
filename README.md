@@ -24,7 +24,7 @@ The dataset contains 22699 3D shapes covering 24 shape categories:
 We use a chair as an example to illustrate how our data is organized. This chapter is specifically divided into two parts to elaborate the example. In the first part, we will use a figure to illustrate how to represent a model with a partnet tree. In the second part, we will explain the details of each folder.
 
 #### 1. Representing the model with a partnet tree
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture15.png) 
+![image](https://github.com/PeppaZhu/PartNet_Dataset/blob/master/pictures/picture15.png) 
 ***Figure 1. The chair is represented as a top-down recursive hierarchy tree.***
 
 As shown in ***Figure 1 (a)***, this is an obj model displayed in Deep Exploration, which represents a chair.As shown in ***Figure 1 (b)***, we organize the model into a partnet tree. Each leaf node represents a part. Then we classify a partnet tree node into three categories: 0 for leaf nodes(e.g. ***node 7***), 1 for adjacent nodes (e.g. ***node 14***, whose left child is adjacent to the right child), and 2 for symmetric nodes (e.g. ***node 9***, which is a rotational symmetric node and has only left child.The child is used to preserve a representative part in symmetric relationships.Then other parts in the symmetric relationship can be obtained by storing symmetric parameters).
