@@ -51,7 +51,7 @@ The mat file under the labels folder corresponds to the type identification of e
 | node label | 0 | 3 | 3 | 1 | 2 | 2 | 2 |
 
 ##### E. the syms folder
-The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In the example of a simple table, there are two sets of symmetrical relationships, so two symmetrical parameters are stored. In partnet tree, corresponding nodes 4 and 5 respectively.
+The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In this example, there are four sets of symmetrical relationships, so four symmetrical parameters are stored. In partnet tree, corresponding nodes 8,9,12 and 13 respectively.
 
 ##### F. the models folder & the obbs folder
 The models folder stores models in .obj form. The obbs folder stores the corresponding obb files for each model.
