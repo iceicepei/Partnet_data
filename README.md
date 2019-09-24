@@ -18,6 +18,7 @@ The dataset contains 22699 3D shapes covering 24 shape categories:
 
 ***Table 1. Specific information of our dataset.***
 
+
 ### Demonstration
 
 We use a chair as an example to illustrate how our data is organized. This chapter is specifically divided into two parts to elaborate the example. In the first part, we will use a figure to illustrate how to represent a model with a partnet tree. In the second part, we will explain the details of each folder.
@@ -41,6 +42,7 @@ Each mat file in the ops folder stores a corresponding type of the node of a par
 
 ***Table 2. Node type.***
 
+
 ##### B. the part_fix folder
 The mat file under the part_fix folder stores the box index corresponding to the leaf node of a model. 
 
@@ -56,6 +58,7 @@ The mat file under the labels folder corresponds to the type identification of e
 
 ***Table 3. Node label.***
 
+
 ##### E. the syms folder
 The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In this example, there are four sets of symmetrical relationships, so four symmetrical parameters are stored. In partnet tree, corresponding ***node 12***,***node 13***,***node 9*** and ***node 8*** in turn.
 
@@ -64,3 +67,26 @@ The models folder stores models in .obj form. The obbs folder stores the corresp
 
 ### Accessing to the dataset
 You could get the dataset [Here](https://www.dropbox.com/sh/o04yue60joxwkml/AACS0HmBybSgEruM3C5bmAvJa?dl=0).
+
+## Citation
+If you use this code, please cite the following paper.
+```
+@inproceedings{Yu_2019_CVPR,
+    title = {PartNet: A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation},
+    author = {Fenggen Yu and Kun Liu and Yan Zhang and Chenyang Zhu and Kai Xu},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages = {to appear},
+    month = {June},
+    year = {2019}
+}
+```
+
+```
+@InProceedings{Mo_2019_CVPR,
+    author = {Mo, Kaichun and Zhu, Shilin and Chang, Angel X. and Yi, Li and Tripathi, Subarna and Guibas, Leonidas J. and Su, Hao},
+    title = {{PartNet}: A Large-Scale Benchmark for Fine-Grained and Hierarchical Part-Level {3D} Object Understanding},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2019}
+}
+```
