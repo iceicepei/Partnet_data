@@ -27,14 +27,14 @@ We use a chair as an example to illustrate how our data is organized. This chapt
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture15.png) 
 ***Figure 1. The chair is represented as a top-down recursive hierarchy tree.***
 
-As shown in Figure 1 (a), this is an obj model displayed in Deep Exploration, which represents a chair.As shown in Figure 1 (b), we organize the model into a partnet tree. Each leaf node represents a part. Then we classify a partnet tree node into three categories: 0 for leaf nodes(e.g. ***node 7***), 1 for adjacent nodes (e.g. ***node 14***, whose left child is adjacent to the right child), and 2 for symmetric nodes (e.g. ***node 9***, which is a rotational symmetric node and has only left child.The child is used to preserve a representative part in symmetric relationships.Then other parts in the symmetric relationship can be obtained by storing symmetric parameters).
+As shown in ***Figure 1 (a)***, this is an obj model displayed in Deep Exploration, which represents a chair.As shown in ***Figure 1 (b)***, we organize the model into a partnet tree. Each leaf node represents a part. Then we classify a partnet tree node into three categories: 0 for leaf nodes(e.g. ***node 7***), 1 for adjacent nodes (e.g. ***node 14***, whose left child is adjacent to the right child), and 2 for symmetric nodes (e.g. ***node 9***, which is a rotational symmetric node and has only left child.The child is used to preserve a representative part in symmetric relationships.Then other parts in the symmetric relationship can be obtained by storing symmetric parameters).
 
 #### 2. Folder instructions
 
 There are seven folders in each of our data models. 
 
 ##### A. the ops folder
-Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in Table 2 for the corresponding type of the chair's node.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
+Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in ***Table 2*** for the corresponding type of the node in ***Figure 1 (b)***.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
 
 |  node ordinal number  | *node 7*  | *node 2* | *node 12*    |  *node 3*   | *node 13*  | *node 14*  | *node 15* | *node 6* | *node 4* | *node 9* | *node 5* | *node 1* | *node 8* | *node 10* | *node 11* | *node 16* | *node 17* |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -50,7 +50,7 @@ The mat file under the part_fix folder stores the box index corresponding to the
 The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
 ##### D. the labels folder
-The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in Table 3,***node 7*** represents the back of the chair (labeled by number 0),***node 6*** represents the chair cushion (labeled by number 1),***node 1***,***node 4*** and ***node 5*** represent legs (labeled by number 2),and ***node 2*** and ***node 3*** represents  armrest of the chair (labeled by number 3).  
+The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in ***Table 3***,***node 7*** represents the back of the chair (labeled by number 0),***node 6*** represents the chair cushion (labeled by number 1),***node 1***,***node 4*** and ***node 5*** represent legs (labeled by number 2),and ***node 2*** and ***node 3*** represents  armrest of the chair (labeled by number 3).  
 
 |  node ordinal number  |  *node 7*   | *node 2* | *node 3*    | *node 6*    |  *node 4*    | *node 5*   | *node 1*    |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
