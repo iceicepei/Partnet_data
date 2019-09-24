@@ -1,6 +1,6 @@
 # PartNet_Dataset
 
-We organize the dataset of PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding) into the form of our PartNet(A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation) dataset.
+We organize the dataset of PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding) into the form of our PartNet(A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation) dataset，which uses a top-down recursive hierarchy tree to represent a model.
 
 ### Introduction
 
