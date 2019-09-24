@@ -29,6 +29,13 @@ ops文件夹下每一个mat文件存储一颗partnet tree的节点对应类型�
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | 节点类型 | 0 | 0 | 2 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
 
+|  category_name  |  chair   | airplane | table    |  sofa    | helicopter   | bike    |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| number of shapes | 999 | 630 | 583 | 630 | 100 | 155 |
+| number of parts | 9697 | 5234 | 3207 | 4747 | 1415 | 1238 |
+| maximum parts per shape | 25 | 14 | 17 | 27 | 21 | 9 |
+| minimum parts per shape | 3 | 4 | 2 | 2 | 6 | 6 |
+
 ##### B. part_fix文件夹
 part_fix文件夹下的mat文件存储一个模型的叶子节点对应的box索引。如下图所示，序号为3、1、2的叶子节点分别对应box5、box4、box3。  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture5.png)
