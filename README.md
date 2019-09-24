@@ -1,22 +1,22 @@
 # PartNet_Dataset
-Dataset for PartNet: A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation
+
+We organize the dataset of PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding) into the form of our PartNet(A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation) dataset.
 
 ### Introduction
 
-We present PartNet: a recursive part decomposition network for fine-grained and hierarchical shape segmentation. We expand another dataset for it，which consists of 24 object categories.This dataset is derived from the dataset of the paper published by Stanford University called PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding). We organize their dataset into the form of our PartNet dataset for the purpose of expanding our dataset.This dataset could enable and serve as a catalyst for many tasks such as shape analysis, dynamic 3D scene modeling and simulation, affordance analysis, and others. 
-
+This dataset is derived from the dataset of the paper published by Stanford University called PartNet(A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding),which consists of 24 object categories.Models of their dataset are fine-grained but lack of a top-down recursive hierarchy for fine-grained segmentation of 3D point clouds. We organize their dataset into the form of our PartNet dataset for the purpose of giving their models a hierarchy we designed.This dataset could enable and serve as a catalyst for many tasks such as shape analysis, dynamic 3D scene modeling and simulation, affordance analysis, and others.
 ### Dataset information
 
 The dataset contains 22699 3D shapes covering 24 shape categories:
 
-|  category_name  |  lamp   | table | cutting_instrument   |  bag   | bed  | bottle   | bowl   | clock   | display   | dishwasher   | door   | earphone   | faucet   | hat   | storage   | keyboard   | laptop   | microwave   | mug   | refrigerator   | scissors   | trashcan   | vase   | chair   |
+|  category_name  |  lamp   | table | knife   |  bag   | bed  | bottle   | bowl   | clock   | display   | dishwasher   | door   | earphone   | faucet   | hat   | storage   | keyboard   | laptop   | microwave   | mug   | refrigerator   | scissors   | trashcan   | vase   | chair   |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | number of shapes | 2603 | 5701 | 486 | 158 | 115 | 511 | 100 | 426 | 329 | 198 | 198 | 269 | 826 | 251 | 2546 | 109 | 92 | 81 | 232 | 209 | 112 | 296 | 411 | 6440 |
 | number of parts | 12200 | 28958 | 1571 | 358 | 2420 | 1432 | 207 | 1151 | 1174 | 838 | 585 | 1193 | 4025 | 588 | 34564 | 5587 | 270 | 346 | 291 | 947 | 394 | 2565 | 1013 | 40879 |
 | maximum parts per shape | 122 | 47 | 5 | 4 | 59 | 5 | 3 | 8 | 5 | 8 | 9 | 8 | 18 | 3 | 100 | 63 | 3 | 8 | 4 | 11 | 5 | 43 | 8 | 30 |
 | minimum parts per shape | 2 | 2 | 2 | 2 | 4 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 13 | 2 | 3 | 2 | 2 | 2 | 2 | 2 | 2 |
 
-### Demo
+### Demonstration
 
 We use a simple table as an example to illustrate how our data is organized. This chapter is specifically divided into three parts to elaborate the demo. In the first part, we will illustrate how a model is represented by an obj file and an obb file. In the second part, we will illustrate the structure of a partnet tree. In the third part, we will explain the details of each folder.
 
