@@ -20,24 +20,18 @@ The dataset contains 22699 3D shapes covering 24 shape categories:
 
 We use a chair as an example to illustrate how our data is organized. This chapter is specifically divided into two parts to elaborate the example. In the first part, we will use a figure to illustrate how to represent a model with a partnet tree. In the second part, we will explain the details of each folder.
 
-#### 1. Representing the model with obj file
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture9.png)  
-As shown in the figure above, this is an obj model displayed in Deep Exploration, which represents a simple table.The table has five parts, each of which is represented by a box with labels ranging from box 1 to box 5. Five parts are identified as two categories: desktop and legs; desktop is marked with number 0 and legs are marked with number 1. Among them, box 1 and box 4 are symmetrical, while box 2 and box 3 are symmetrical.
+#### 1. Representing the model with a partnet tree
+![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture11.png) 
+As shown on the left of the figure above, this is an obj model displayed in Deep Exploration, which represents a chair.
 
-#### 2. Structure of a partnet tree
+As shown on the right of the figure above, we organize the model into a partnet tree. Each leaf node represents a part. Then we classify a partnet tree node into three categories: 0 for leaf nodes, 1 for adjacent nodes (e.g. node 14, whose left child is adjacent to the right child), and 2 for symmetric nodes (e.g. node 9, which has only left child and is used to preserve a representative part in symmetric relationships.Then other parts in the symmetric relationship can be obtained by storing symmetric parameters).
 
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture2.png)
- 
-We organize the model into a partnet tree, as shown in the figure above. Each leaf node represents a box, or part. So why does the example model mentioned above have five boxes and this tree only has three leaf nodes? We find that because box 1 and box 4 are symmetrical and box 2 and box 3 are symmetrical , only one representative box needs to be stored in a symmetrical relationship, and then only one symmetrical parameter needs to be stored to obtain the other boxes of the symmetrical relationship according to the symmetrical parameters.
-
-We classify nodes of a partnet tree into three categories: 0 for leaf node, 1 for adjacent node (its left child is adjacent to the right child), and 2 for symmetric node (it has only left child, and the left child is a representative box in the symmetric relationship. Then store the symmetric parameters.)
-
-#### 3. Folder instructions
+#### 2. Folder instructions
 
 There are seven folders in each of our data models. 
 
 ##### A. the ops folder
-Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of a simple table.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
+Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of the chair.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
 
 ##### B. the part_fix folder
