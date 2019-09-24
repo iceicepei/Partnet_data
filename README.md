@@ -31,7 +31,7 @@ As shown on the right of the figure above, we organize the model into a partnet 
 There are seven folders in each of our data models. 
 
 ##### A. the ops folder
-Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the chair's node.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
+Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the table below for the corresponding type of the chair's node.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
 
 |  node ordinal number  |  7   | 2 | 12    |  3    | 13   | 14    | 15 | 6 | 4 | 9 | 5 | 1 | 8 | 10 | 11 | 16 | 17 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -44,7 +44,7 @@ The mat file under the part_fix folder stores the box index corresponding to the
 The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
 ##### D. the labels folder
-The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 7 represents the back of the chair (marked by number 0),leaf node 6 represents the chair cushion (marked by number 1),leaf nodes 1,4 and 5 represent legs (marked by number 2),and leaf node 2 and 3 represents the armrest of the chair (marked by number 3).  
+The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following table, leaf node 7 represents the back of the chair (marked by number 0),leaf node 6 represents the chair cushion (marked by number 1),leaf nodes 1,4 and 5 represent legs (marked by number 2),and leaf node 2 and 3 represents the armrest of the chair (marked by number 3).  
 
 |  node ordinal number  |  7   | 2 | 3    | 6    |  4    | 5   | 1    |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
