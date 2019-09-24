@@ -31,19 +31,25 @@ As shown on the right of the figure above, we organize the model into a partnet 
 There are seven folders in each of our data models. 
 
 ##### A. the ops folder
-Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the node of the chair.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture3.png)  
+Each mat file in the ops folder stores a corresponding type of the node of a partnet tree, as shown in the figure below for the corresponding type of the chair's node.(0 for leaf nodes, 1 for adjacent nodes and 2 for symmetric nodes).
+
+|  节点序号  |  7   | 2 | 12    |  3    | 13   | 14    | 15 | 6 | 4 | 9 | 5 | 1 | 8 | 10 | 11 | 16 | 17 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 节点类型 | 0 | 0 | 2 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
 
 ##### B. the part_fix folder
-The mat file under the part_fix folder stores the box index corresponding to the leaf node of a model. As shown in the following figure, leaf nodes with serial numbers 3, 1 and 2 correspond to box 5, box 4 and box 3, respectively.  
-![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture5.png)
+The mat file under the part_fix folder stores the box index corresponding to the leaf node of a model. 
 
 ##### C. the boxes folder
 The mat file under the boxes folder stores the box corresponding to each leaf node of a model.
 
 ##### D. the labels folder
-The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 3 represents the desktop (marked by number 0), and leaf nodes 1 and 2 represent legs (marked by number 1).  
+The mat file under the labels folder corresponds to the type identification of each leaf node. As shown in the following figure, leaf node 7 represents the back of the chair (marked by number 0),leaf node 6 represents the chair cushion (marked by number 1),leaf nodes 1,4 and 5 represent legs (marked by number 2),and leaf node 2 and 3 represents the armrest of the chair (marked by number 3), .  
 ![image](https://github.com/PeppaZhu/Partnet_data/blob/master/pictures/picture6.png)
+
+|  节点序号  |  7   | 2 | 3    |  4    | 5   | 1    |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 节点label | 0 | 3 | 3 | 1 | 2 | 2 | 2 |
 
 ##### E. the syms folder
 The mat file under the syms folder stores symmetrical parameters of each symmetrical node. In the example of a simple table, there are two sets of symmetrical relationships, so two symmetrical parameters are stored. In partnet tree, corresponding nodes 4 and 5 respectively.
